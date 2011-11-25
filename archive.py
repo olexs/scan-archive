@@ -4,7 +4,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 archive_from = "/home/vima/Picasa/VIMA"
-archive_to = "/home/vima/Picasa/VIMA/VIMA\ LAGER"
+archive_to = "/home/vima/Picasa/VIMA/VIMA LAGER"
 
 d_format = "%d.%m.%y"
 
