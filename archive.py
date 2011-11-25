@@ -4,7 +4,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 archive_from = "/home/vima/Picasa/VIMA"
-archive_to = "/home/vima/Picasa/VIMA/VIMA_LAGER"
+archive_to = "/home/vima/Picasa/VIMA/VIMA\ LAGER"
 
 d_format = "%d.%m.%y"
 
@@ -17,7 +17,7 @@ for line in os.listdir(archive_from):
     try:
         date = datetime.strptime(line.split()[0], d_format)
         if date < end:
-            shutil.move(archive_from+'/'+line, archive_to+'/'+line)
+            shutil.move(archive_from+'/'+line, archive_to)
             print >>log, 'Moving:', line
     except (ValueError, IndexError):
         pass 
