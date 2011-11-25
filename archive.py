@@ -18,8 +18,8 @@ for line in os.listdir(archive_from):
         date = datetime.strptime(line.split()[0], d_format)
         if date < end:
             shutil.move(archive_from+'/'+line, archive_to+'/'+line)
-			print >>log, 'Moving:', line
+            print >>log, 'Moving:', line
     except (ValueError, IndexError):
         pass 
-		
+
 print >>log, datetime.now(), 'Archiving finished.'
