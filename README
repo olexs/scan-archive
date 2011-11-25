@@ -1,0 +1,1 @@
+Simple Python script that runs in cron on the office server, daily moving all old scans into the archive.
